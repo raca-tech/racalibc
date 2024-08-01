@@ -5,5 +5,5 @@ extern int main();
 void _start()
 {
     int exit_code = main();
-    exit(exit_code); // good
+    exit(exit_code);
 }

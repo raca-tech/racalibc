@@ -24,6 +24,7 @@ enum syscall_nums
     RACA_GETTYPE,
     RACA_MOUNT,
     RACA_EXIT,
+    RACA_WAIT4,
 };
 
 uint64_t syscall(uint64_t number, uint64_t arg1, uint64_t arg2, uint64_t arg3,
