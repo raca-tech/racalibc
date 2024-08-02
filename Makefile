@@ -15,3 +15,6 @@ build/%.S.o: %.S
 build/%.c.o: %.c
 	@mkdir -p $(@D)
 	$(C_COMPILER_PREFIX)gcc $(C_FLAGS) -c $< -o $@
+
+clean:
+	rm -rf build

@@ -11,13 +11,13 @@
 
 #define is_digit(c) ((c) >= '0' && (c) <= '9')
 
-#define do_div(n, base)                                                        \
-    ({                                                                         \
-        int __res;                                                             \
-        __asm__("divq %%rcx"                                                   \
-                : "=a"(n), "=d"(__res)                                         \
-                : "0"(n), "1"(0), "c"(base));                                  \
-        __res;                                                                 \
+#define do_div(n, base)                       \
+    ({                                        \
+        int __res;                            \
+        __asm__("divq %%rcx"                  \
+                : "=a"(n), "=d"(__res)        \
+                : "0"(n), "1"(0), "c"(base)); \
+        __res;                                \
     })
 
 int skip_atoi(const char **s)

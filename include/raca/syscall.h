@@ -22,10 +22,10 @@ enum syscall_nums
     RACA_CHANGECWD = 15,
     RACA_GETCWD = 16,
     RACA_CREATE = 17,
-    RACA_GETTYPE = 18,
-    RACA_MOUNT = 19,
-    RACA_EXIT = 20,
-    RACA_WAIT4 = 21,
+    RACA_GETTYPE = 19,
+    RACA_MOUNT = 20,
+    RACA_EXIT = 21,
+    RACA_WAIT4 = 22,
 };
 
 uint64_t syscall(uint64_t number, uint64_t arg1, uint64_t arg2, uint64_t arg3,
